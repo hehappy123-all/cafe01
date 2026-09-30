@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KH카페</title>
+    <link rel="stylesheet" href="./cafe01.css">
+    <script defer src="./cafe01.js"></script>
+</head>
+<body>
+
+    <!-- 헤더 / 네비게이션 -->
+    <header class="navbar">
+        <div class="nav-container">
+            <h1 class="logo" onclick="switchPage('home')">KH카페</h1>
+            <nav class="nav-links">
+                <a href="#" id="nav-home" class="active" onclick="switchPage('home')">홈</a>
+                <a href="#" id="nav-menu" onclick="switchPage('menu')">메뉴</a>
+                <a href="#" id="nav-about" onclick="switchPage('about')">소개</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 1. 홈 페이지 -->
+    <main id="page-home" class="page-content active">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h2>커피를 커피답게</h2>
+            <p>Coffee as coffee should be</p>
+            <button class="btn-menu" onclick="switchPage('menu')">메뉴 보기</button>
+        </section>
+
+        <!-- 추천 메뉴 Section -->
+        <section class="container main-section">
+            <h3 class="section-title border-bottom">추천 메뉴</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="img-placeholder"></div>
+                    <div class="card-body">
+                        <h4>에스프레소</h4>
+                        <hr><h5>Size : Basic</h5>
+                        <hr><h5>Only Hot</h5><hr />
+                        <p class="desc">고카페인 함유</p>
+                        <p class="price">1,500원</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-placeholder"></div>
+                    <div class="card-body">
+                        <h4>아메리카노</h4>
+                        <hr><h5>Size : Small / Medium / Large</h5>
+                        <hr><h5>Hot / Ice</h5><hr />
+                        <p class="desc">고카페인 함유</p>
+                        <p class="price">2,000원</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-placeholder"></div>
+                    <div class="card-body">
+                        <h4>카페라떼</h4>
+                        <hr><h5>Size : Small / Medium / Large</h5>
+                        <hr><h5>Hot / Ice</h5><hr />
+                        <p class="desc">고카페인 함유</p>
+                        <p class="price">2,500원</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-placeholder"></div>
+                    <div class="card-body">
+                        <h4>카푸치노</h4>
+                        <hr><h5>Size : Basic</h5>
+                        <hr><h5>Only Hot</h5><hr />
+                        <p class="desc">고카페인 함유</p>
+                        <p class="price">2,500원</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 카페 소개 Section -->
+        <section class="container main-section">
+            <h3 class="section-title border-bottom">카페 소개</h3>
+            <div class="about-summary flex-container">
+                <div class="img-placeholder flex-1" style="height: 220px; background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1200&auto=format&fit=crop');"></div>
+                <div class="about-summary-text flex-1">
+                    <p1><strong>당신의 품격에 맞춘 고품질 커피브랜드</strong></p1>
+                    <p>영업시간 : 08:00 ~ 18:00</p>
+                    <table class="info-table center-table">
+                        <thead>
+                            <tr>
+                                <th>매장 수</th>
+                                <th>메뉴 수</th>
+                                <th>좌석 수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>20개</td>
+                                <td>12개</td>
+                                <td>50석</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- 2. 메뉴 페이지 -->
+    <main id="page-menu" class="page-content">
+        <section class="page-header">
+            <div class="container">
+                <h2>메뉴</h2>
+                <div class="breadcrumb">홈 > 메뉴</div>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- 커피 Section -->
+            <section class="menu-category">
+                <h3 class="category-title">커피</h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="img-placeholder"></div>
+                        <div class="card-body">
+                            <h4>에스프레소</h4>
+                            <hr><h5>Size : Basic</h5>
+                            <hr><h5>Only Hot</h5><hr />
+                            <p class="desc">고카페인 함유</p>
+                            <p class="price">1,500원</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-placeholder"></div>
+                        <div class="card-body">
+                            <h4>아메리카노</h4>
+                            <hr><h5>Size : Small / Medium / Large</h5>
+                            <hr><h5>Hot / Ice</h5><hr />
+                            <p class="desc">고카페인 함유</p>
+                            <p class="price">2,000원</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-placeholder"></div>
+                        <div class="card-body">
+                            <h4>카페라떼</h4>
+                            <hr><h5>Size : Small / Medium / Large</h5>
+                            <hr><h5>Hot / Ice</h5><hr />
+                            <p class="desc">고카페인 함유</p>
+                            <p class="price">2,500원</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-placeholder"></div>
+                        <div class="card-body">
+                            <h4>카푸치노</h4>
+                            <hr><h5>Size : Basic</h5>
+                            <hr><h5>Only Hot</h5><hr />
+                            <p class="desc">고카페인 함유</p>
+                            <p class="price">2,500원</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 음료 Section -->
+            <section class="menu-category">
+                <h3 class="category-title">음료</h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="img-placeholder"></div>
+                        <div class="card-body">
+                            <h4>레몬에이드</h4>
+                            <hr><h5>Size : Basic</h5>
+                            <hr><h5>Only Ice</h5><hr />
+                            <p class="desc">레몬의 상큼함과 톡쏘는 탄산의 상쾌함이 만난 청량 에이드</p>
+                            <p class="price">3,000원</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-placeholder"></div>
+                        <div class="card-body">
+                            <h4>자몽에이드</h4>
+                            <hr><h5>Size : Basic</h5>
+                            <hr><h5>Only Ice</h5><hr />
+                            <p class="desc">자몽의 달콤쌉싸름한 맛과 탄산의 톡쏘는 목넘김이 어우러진 트로피컬 에이드.</p>
+                            <p class="price">3,000원</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-placeholder"></div>
+                        <div class="card-body">
+                            <h4>딸기주스</h4>
+                            <hr><h5>Size : Basic</h5>
+                            <hr><h5>Only Ice</h5><hr />
+                            <p class="desc">새콤달콤한 딸기 블렌딩한 과일 음료</p>
+                            <p class="price">3,000원</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-placeholder"></div>
+                        <div class="card-body">
+                            <h4>딸기바나나주스</h4>
+                            <hr><h5>Size : Basic</h5>
+                            <hr><h5>Only Ice</h5><hr />
+                            <p class="desc">상큼한 딸기와 부드러운 바나나가 만나, 새콤달콤한 매력이 살아 있는 과일 음료</p>
+                            <p class="price">3,000원</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 디저트 Section -->
+            <section class="menu-category">
+                <h3 class="category-title">디저트</h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="img-placeholder"></div>
+                        <div class="card-body">
+                            <h4>허니브레드</h4>
+                            <p class="desc">바삭하고 쫄깃하게 구워낸 빵에 달콤한 크림을 올려 즐기는 조화로운 베이커리 메뉴</p>
+                            <p class="price">3,000원</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-placeholder"></div>
+                        <div class="card-body">
+                            <h4>티라미수 케익</h4>
+                            <p class="desc">부드러운 치즈 맛과 코코아의 조화로운 향으로 호불호 없이 즐기는 케이크</p>
+                            <p class="price">3,000원</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-placeholder"></div>
+                        <div class="card-body">
+                            <h4>치즈 케익</h4>
+                            <p class="desc">진한 치즈의 맛을 달콤하고 부드럽게 느낄 수 있는 케이크</p>
+                            <p class="price">3,000원</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-placeholder"></div>
+                        <div class="card-body">
+                            <h4>초코무스 케익</h4>
+                            <p class="desc">달콤한 초콜릿 본연의 맛을 더 진하게 느낄 수 있는 케이크</p>
+                            <p class="price">3,000원</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="notice-text">
+                ※ 이용약관 · 개인정보처리방침
+            </div>
+        </div>
+    </main>
+
+
+    <!-- 3. 카페 소개 페이지 -->
+    <main id="page-about" class="page-content">
+        <section class="page-header">
+            <div class="container">
+                <h2>카페 소개</h2>
+                <div class="breadcrumb">홈 > 소개</div>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- 인사말 -->
+            <section class="about-section">
+                <h3 class="category-title">인사말</h3>
+                <div class="greeting-box flex-container">
+                    <div class="img-placeholder flex-1" style="height: 200px;"></div>
+                    <div class="greeting-text flex-1">
+                        <p>~~~인사말 첫째 줄~~~</p>
+                        <p>~~~인사말 둘째 줄~~~</p>
+                        <p>~~~인사말 셋째 줄~~~</p>
+                        <p>~~~맺음말~~~</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 연혁 -->
+            <section class="about-section">
+                <h3 class="category-title">연혁</h3>
+                <table class="info-table full-width">
+                    <thead>
+                        <tr>
+                            <th style="width: 30%;">연도</th>
+                            <th style="width: 70%;">내용</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0000</td>
+                            <td class="text-left">~~~연혁내용~~~</td>
+                        </tr>
+                        <tr>
+                            <td>0000</td>
+                            <td class="text-left">~~~연혁내용~~~</td>
+                        </tr>
+                        <tr>
+                            <td>0000</td>
+                            <td class="text-left">~~~연혁내용~~~</td>
+                        </tr>
+                        <tr>
+                            <td>0000</td>
+                            <td class="text-left">~~~연혁내용~~~</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 매장 안내 -->
+            <section class="about-section">
+                <h3 class="category-title">매장 안내</h3>
+                <table class="info-table full-width">
+                    <thead>
+                        <tr>
+                            <th>매장명</th>
+                            <th>주소</th>
+                            <th>전화번호</th>
+                            <th>영업시간</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>매장01</td>
+                            <td>~~~주소~~~</td>
+                            <td>00-000-0000</td>
+                            <td>00:00 ~ 00:00</td>
+                        </tr>
+                        <tr>
+                            <td>매장02</td>
+                            <td>~~~주소~~~</td>
+                            <td>00-000-0000</td>
+                            <td>00:00 ~ 00:00</td>
+                        </tr>
+                        <tr>
+                            <td>매장03</td>
+                            <td>~~~주소~~~</td>
+                            <td>00-000-0000</td>
+                            <td>00:00 ~ 00:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="container">
+            <p>KH카페 | 주소 | 전화 02-1234-1234</p>
+            <p>2026.KH카페.ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <script src="./cafe01.js"></script>
+</body>
+</html>
